@@ -117,10 +117,12 @@ public class DoubleLinkedList
 
         while (current != null)
         {
+            Node? next = current.next;  
             if (current.data == value)
+            {
                 Delete(GetIndex(current));
-            else
-                current = current.next;
+            }
+            current = next; 
         }
     }
 
