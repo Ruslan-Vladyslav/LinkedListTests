@@ -195,7 +195,7 @@ public class DoubleLinkedList
         while (current != null)
         {
             if (current.data == value)
-                return index + 1;
+                return index;
             current = current.next;
             index++;
         }
@@ -246,13 +246,17 @@ public class DoubleLinkedList
             return;
         }
 
-        Console.WriteLine("List: ");
+        Console.Write("List: ");
         Node? cur = _root;
 
         while (cur != null)
         {
-            Console.Write(cur.data + " "); 
-            cur = cur.next; 
+            Console.Write(cur.data);
+            if (cur.next != null)
+            {
+                Console.Write(" ");
+            }
+            cur = cur.next;
         }
         Console.WriteLine();
     }
