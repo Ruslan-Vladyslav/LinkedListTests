@@ -92,5 +92,18 @@ namespace UnitTests
             Assert.Equal('B', list.Get(1));
             Assert.Equal('A', list.Get(2));
         }
+
+        [Fact]
+        public void FindFirst_Occurence()
+        {
+            var list = new DoubleLinkedList();
+            list.Append('A');
+            list.Append('B');
+            list.Append('A');
+
+            int index = list.FindFirst('A');
+
+            Assert.Equal(0, index);
+        }
     }
 }

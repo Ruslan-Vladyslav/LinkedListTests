@@ -195,7 +195,7 @@ public class DoubleLinkedList
         while (current != null)
         {
             if (current.data == value)
-                return index;
+                return index + 1;
             current = current.next;
             index++;
         }
