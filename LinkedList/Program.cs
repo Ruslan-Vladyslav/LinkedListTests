@@ -1,9 +1,10 @@
 ﻿
 
+
 public class Program
 {
     static void Main()
     {
-        var list = new LinkedList();
+        var list = new DoubleLinkedList();
     }
-} 
+}
