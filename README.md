@@ -18,7 +18,7 @@ var = 1
    ```
    Go to project directory:
    ```bash
-   cd LinkedList
+   cd .\LinkedListTests\LinkedList\
    ```
 3. Use the command to assemble the project:
    ```bash
@@ -42,7 +42,7 @@ var = 1
    ```
    For more detailed test process use:
    ```bash
-   dotnet run --verbosity detailed
+   dotnet test --verbosity detailed
    ```
 ## CI Failure Commit Link
   To demonstrate that the unit tests can fail on CI, you can check the commit where the tests initially failed: [link](https://github.com/Ruslan-Vladyslav/LinkedListTests/commit/4da380400aded6470d6e1c0bfbbb81a129ca0baa)
