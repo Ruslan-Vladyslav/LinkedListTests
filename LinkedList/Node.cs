@@ -3,11 +3,11 @@
 
 public class Node
 {
-    public int data;
+    public char data;
     public Node? next;
     public Node? prev;
 
-    public Node(int data)
+    public Node(char data)
     {
         this.data = data;
         next = null;
